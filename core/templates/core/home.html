@@ -13,7 +13,7 @@
 
 .gradient-text {
   letter-spacing: 5px !important;
-  background: radial-gradient(circle, #ff5722, #ffeb3b, #2196f3);
+  background: #ffff;
 
   background-clip: text;
   color: transparent;
@@ -35,15 +35,8 @@
 <br><br>
  <div class="container">
 
-  <h1 class="text-center gradient-text">Welcome To The The Famous Library</h1>
+  <h1 class="text-center gradient-text">Welcome To The New Library</h1>
 
-{% if not request.user.is_authenticated %}
-<br>
-<br>
-<h4 class="empty-message">Demo Username And Password</h4>
-<h5 class="empty-message">Username : demo </h5>
-<h5 class="empty-message">Password: 87654321a </h5>
-{% endif %}
 </div>
 
 {% endblock content %}
